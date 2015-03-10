@@ -9,7 +9,6 @@ if(Yii::app()->user->checkAccess('alumno')&&!Yii::app()->user->isSuperAdmin){
 	if(count(Alumnoproyecto::model()->find("al_rut='".Yii::app()->user->name."'"))>0){
 
 		$this->menu=array(
-			array('label'=>'Evaluación Proyecto', 'url'=>array('proyectoevaluador/adminAlumno')),
 			array('label'=>'Editar', 'url'=>array('update', 'id'=>Alumnoproyecto::model()->find("al_rut='".Yii::app()->user->name."'")->pro_idProyecto)),
 		);
 	}

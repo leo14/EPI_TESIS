@@ -98,7 +98,6 @@
 										array('label'=>'Actividades', 'url'=>array('actividades/index'),'visible'=>(Yii::app()->user->checkAccess('alumno')&&!Yii::app()->user->isSuperAdmin)),
 										array('label'=>'Proyecto', 'url'=>array('proyecto/create'),'visible'=>(Yii::app()->user->checkAccess('alumno')&&!Yii::app()->user->isSuperAdmin)),
 										array('label'=>'Encuestas', 'url'=>array('encuestaactividad/admin'),'visible'=>(Yii::app()->user->checkAccess('alumno')&&!Yii::app()->user->isSuperAdmin)),
-										array('label'=>'Cursos', 'url'=>array('curso/index'),'visible'=>(Yii::app()->user->checkAccess('alumno')&&!Yii::app()->user->isSuperAdmin)),
 										array('label'=>'Salir', 'url'=>Yii::app()->user->ui->logoutUrl	, 'visible'=>!Yii::app()->user->isGuest),
 										),
 									'activeCssClass' => 'active',
@@ -115,7 +114,6 @@
 										array('label'=>'Actividades', 'url'=>array('actividades/index'),'visible'=>(Yii::app()->user->checkAccess('alumno')&&!Yii::app()->user->isSuperAdmin)),
 										array('label'=>'Postulación', 'url'=>array('estadopostulacion/view&id='.Alumnoproyecto::model()->find("al_rut='".Yii::app()->user->name."'")->pro_idProyecto),'visible'=>(Yii::app()->user->checkAccess('alumno')&&!Yii::app()->user->isSuperAdmin)),
 										array('label'=>'Encuestas', 'url'=>array('encuestaactividad/admin'),'visible'=>(Yii::app()->user->checkAccess('alumno')&&!Yii::app()->user->isSuperAdmin)),
-										array('label'=>'Cursos', 'url'=>array('curso/index'),'visible'=>(Yii::app()->user->checkAccess('alumno')&&!Yii::app()->user->isSuperAdmin)),
 										array('label'=>'Salir', 'url'=>Yii::app()->user->ui->logoutUrl	, 'visible'=>!Yii::app()->user->isGuest),
 										),
 									'activeCssClass' => 'active',
@@ -162,12 +160,8 @@
 									array('label'=>'Consultas Participantes', 'url'=>array('/consultainterna/admin'), 'visible'=>(Yii::app()->user->isSuperAdmin)),
 									array('label'=>'Convocatoria', 'url'=>array('/actividades/admin'), 'visible'=>(Yii::app()->user->isSuperAdmin)),
 									array('label'=>'Postulaciones', 'url'=>array('proyecto/admin'), 'visible'=>(Yii::app()->user->isSuperAdmin)),
-									array('label'=>'Evaluaciones', 'url'=>array('/proyectoevaluador/admin'), 'visible'=>(Yii::app()->user->isSuperAdmin)),
 									array('label'=>'Encuestas', 'url'=>array('actividades/adminEncuestas'), 'visible'=>(Yii::app()->user->isSuperAdmin)),
 									array('label'=>'Subir Archivo', 'url'=>array('subirarchivos/index'),'visible'=>(Yii::app()->user->isSuperAdmin)),
-									array('label'=>'Cursos', 'url'=>array('curso/index'),'visible'=>(Yii::app()->user->isSuperAdmin)),
-										
-
 									array('label'=>'Salir', 'url'=>Yii::app()->user->ui->logoutUrl	, 'visible'=>!Yii::app()->user->isGuest),
 									),
 								'activeCssClass' => 'active',
@@ -220,9 +214,6 @@
 									array('label'=>'Evaluaciones', 'url'=>array('/proyectoevaluador/admin'), 'visible'=>(Yii::app()->user->isSuperAdmin)),
 									array('label'=>'Encuestas', 'url'=>array('actividades/adminEncuestas'), 'visible'=>(Yii::app()->user->isSuperAdmin)),
 									array('label'=>'Subir Archivo', 'url'=>array('subirarchivos/index'),'visible'=>(Yii::app()->user->isSuperAdmin)),
-									array('label'=>'Cursos', 'url'=>array('curso/index'),'visible'=>(Yii::app()->user->isSuperAdmin)),
-										
-
 									array('label'=>'Salir', 'url'=>Yii::app()->user->ui->logoutUrl	, 'visible'=>!Yii::app()->user->isGuest),
 									),
 								'activeCssClass' => 'active',

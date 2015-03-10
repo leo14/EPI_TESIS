@@ -16,7 +16,7 @@ else if(Yii::app()->user->checkAccess('alumno')){
 // si envio el proyecto a revisión
 	if ($model->pro_estado=="Revisión") {
 		$this->menu=array(
-			array('label'=>'Evaluación Proyecto', 'url'=>array('proyectoevaluador/adminAlumno')),
+			
 			
 		);
 		
