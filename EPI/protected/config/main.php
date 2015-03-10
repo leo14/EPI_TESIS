@@ -134,7 +134,7 @@ return array(
 	
 		
 	//db en localhost		
-		/*
+		
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=epi',
 			'emulatePrepare' => true,
@@ -142,16 +142,16 @@ return array(
 			'password' => '',
 			'charset' => 'utf8',
 		),
-		*/
+		
 		
 		//db en servidor ubb
-		'db'=>array(
-			'connectionString' => 'mysql:host=mysql.dci.ubiobio.cl;dbname=epi',
-			'emulatePrepare' => true,
-			'username' => 'epi',
-			'password' => '8tMQoui>7"',
-			'charset' => 'utf8',
-		),
+		// 'db'=>array(
+		// 	'connectionString' => 'mysql:host=mysql.dci.ubiobio.cl;dbname=epi',
+		// 	'emulatePrepare' => true,
+		// 	'username' => 'epi',
+		// 	'password' => '8tMQoui>7"',
+		// 	'charset' => 'utf8',
+		// ),
 
 		
 		'errorHandler'=>array(
