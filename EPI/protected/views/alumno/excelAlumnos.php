@@ -20,7 +20,12 @@
 		<th style="border: solid rgb(188, 188, 188) 2px;">E-MAIL 2</th>
 		<th style="border: solid rgb(188, 188, 188) 2px;">COMENTARIO</th>
 	</tr>
-<?php foreach ($model as $data):?>	
+<?php 
+$a=0;
+
+foreach ($model as $data):
+$a=$a+1;
+?>	
 	<tr>
 		<td style="text-align: left;border: solid;"> <?php echo $data->al_rut ?></td>
 		<td style="text-align: left;border: solid;"> <?php echo $data->al_nombre ?></td>
@@ -33,6 +38,10 @@
 		<td style="text-align: left;border: solid;"> <?php echo $data->al_email2 ?></td>
 		<td style="text-align: left;border: solid;"> <?php echo $data->al_comentario ?></td>
 	</tr>
-<?php  endforeach;?>
+<?php 
+
+ endforeach;
+echo 'Total inscritos = '.$a;
+ ?>
 	
 </table>
